@@ -1,0 +1,319 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="Favicon.png "  type="image/favicon" width="16px">
+<style>
+    /*Basi Styli*/
+body{background-color: whitesmoke;}
+h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
+.big-text{font-size: 70px; font-weight: 900;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.intro-text{text-transform: uppercase;font-size: 20px; font-weight: bold;}
+.small-text{font-size: 14px;}
+.button{padding: 10px 30px; background-color: blue; color: #fff; display: inline-block; border-radius: 4px; font-family: 'Roboto', sans-serif; text-decoration: none;}
+.content{max-width: 900px; margin: 0 auto; margin-top: 15px;}
+.img1{width: 50%; height: 50%; float: left; padding: 10px;}
+/*Basi Styli*/
+
+/*smartphone*/
+@media(max-width: 768px){
+.big-text{font-size: 40px;}
+}
+/*smartphone*/
+
+/*header*/
+.header{
+    width: 95%; position: fixed; top: 0;
+    left: 50%;
+transform: translateX(-48%);
+    padding: 30px;
+    display: flex;
+    max-width: 1350px;
+}
+
+.logo{z-index: 1; }
+.logo img{width: 100px; height: 90px; margin-top: -15px;}
+.menu{ width: 100%; z-index: 0;}
+.menu li{display: inline-block}
+.menu li a{color: wheat; padding: 15px; display: block; font-family: 'Roboto', sans-serif; text-decoration: none; font-size: 23px;}
+.Martello{display: none;}
+/*Header*/
+
+/*smartphone Menu*/
+@media(max-width: 768px){
+    .cta{display: none;}
+    .menu{position: absolute; top: 0%; right:-100%;  background: black;
+    height: 100vh; padding-top: 80px;}
+    .menu li{display: block;}
+   .menu--open{right:0%;}
+   
+    .Martello{display: block;
+    width: 30px; height: 30px; 
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    }
+    .Martello span{background: whitesmoke;
+    height: 3px; width: 100%; display: block ;
+    margin-bottom: 5px;
+    }
+
+}
+ /*smartphone Menu*/   
+
+
+/*Class Hero*/
+.hero{
+    height: 100vh;
+    display: flex;width: 100%;  align-items: center;
+    background: url(Img/Office01.avif) no-repeat center center;
+    background-size: cover;
+    padding: -10%;
+    background-color: rgba(0,0,0,0.10);
+}
+
+.hero--small{height: 500px;}
+
+.hero__content{
+width: 90%;
+max-width: 1350px;
+margin: 0 auto;
+padding: 30px;
+}
+/*smartphone*/
+
+
+/*Poster*/
+.poster{
+    display: flex; 
+    height: 100vh; 
+    width: 100%;
+    align-items: center;
+    margin-top: 70px;
+}
+
+
+
+ /*Poster*/
+.poster__img{width: 65%; height: 100%;}
+.poster__content{width: 35%; padding: 50px;}
+.poster__img img{object-fit: cover; width: 100%; height: 100%;}
+ /*Poster*/
+
+
+ /* media poster*/
+@media(max-width:768px){
+    .poster{flex-wrap: wrap; height: auto;}
+    .poster__img,
+    .poster__content{width: 100%;}
+}
+/*media poster*/
+
+
+
+
+/*smartphonecover*/
+@media(max-width:768px){ 
+.bg-cover{flex-wrap: wrap; height: auto;}
+.bg-cover__text,
+.bg-cover__title{width: 100%;}
+
+
+ }
+/*smartphone cover*/
+
+
+/*grid*/
+.grid{display: flex; max-width: 1350px; padding: 0 30px; margin: 0 auto;  margin-top: 5%;}
+.grid.col{width: 100%;}
+.co1{  margin-top: 20px;}
+/*grid*/
+
+/*smartphone grid*/
+@media(max-width:768px){   
+.grid{flex-wrap: wrap;
+}
+.co1{margin-top: -40px;}
+.testo2{margin-top:120px;}
+
+}
+/*smartphone grid*/
+
+
+
+
+
+
+.testo2{margin-top:120px;}
+@media(max-width:768px){
+    .testo2{margin-top: 5px;}
+}
+
+
+
+
+
+
+/*smartphone img*/
+@media(max-width: 768px){
+.img1{flex-wrap: wrap; height:auto;
+width: 100%;
+object-fit: cover; }
+}
+
+
+ /*Footer*/
+ footer{
+	text-align:center;
+	padding:30px 10px;
+	line-height: 1.6em;
+	font-size:0.8em;
+	background-color: black;
+	color: #fff;
+    margin-top: 5%;
+}
+
+footer a{
+	color:#F0776C;
+}
+
+footer a:hover{
+	color:black;	
+}
+
+footer .social-cont .social-list > li {
+	margin: 8px 8px 8px 0;
+	display: inline-block;
+	vertical-align: top;
+	height: 32px;
+	width: 32px;
+	border-radius: 6em;
+	background-color:black; 
+}
+
+footer .social-cont .social-list li img {
+	width: 32px
+}
+
+footer .social-cont .social-list > li:hover {
+background:#FF968C; 	
+}
+ /*Footer*/	
+
+
+ /*smartphone Footer*/
+ @media(max-width:768px){
+    footer{
+        text-align:center;
+        padding:30px 10px;
+        line-height: 1.6em;
+        font-size:0.8em;
+        background-color: black;
+        color: #fff;
+        margin-top: 10%;
+    }
+}
+ /*smartphone Footer*/
+
+
+
+
+
+
+ /*box sizing*/
+*,
+*:before,
+*:after{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo favicon/Logo11.png" alt="">
+        </div>
+        <ul class="menu">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Default.html">Chi siamo</a></li>
+            <li><a href="Sitoweb.html"> Contatti</a></li>
+        </ul>
+        <div class="cta">
+            <a href="Index3.html" ></a></div>
+            <div class="Martello">
+        <span></span>
+        <span></span>
+        <span></span>
+            </div>
+        </div>
+        
+
+        
+        <div class="hero hero--small">
+            <div class="hero__content">
+                <p class="intro-text"></p>
+                <h1 class="big-text"></h1>
+             
+            </div>
+        </div>
+        
+
+
+        
+    <div class="content">
+<h3 class="med-text">Chi siamo </h3>
+<p class="normal-text">Accedemia Del secolo è nata nel 2005 come società di formazione del gruppo Virtual crede da sempre nella centralità delle persone per le quali progetta e propone percorsi di crescita personale e professionale.
+    I corsi di formazione manageriali, di addestramento tecnico, di formazione linguistica o informatica di Accademia  hanno  tutti un importante punto di partenza comune: essere percorsi in un processo di formazione e crescita continua, che si estende lungo l’intero arco della vita.
+    Accademia Del secolo ha iniziato la sua attività proponendo ad aziende e persone in cerca di occupazione, percorsi formativi all’interno dei finanziamenti previsti dal Fondo Regionale.
+    Di lì a breve, raccogliendo l’esigenza delle aziende clienti di percorsi di formazione per i propri dipendenti, ha allargato la propria area di attività e le proprie competenze per far fronte a questo bisogno.</p>
+   <h1 class="med-text">I Nostri Esperti</h1>
+   <img  class="img1" src="Img/Prof1.avif" alt="">
+   <img  class="img1" src="Img/Prof2.avif" alt="">
+   <br>
+   <p class="normal-text">Scopri i nostri formatori: Professionisti del settore ed esperti in tutti i nostri corsi.
+    <br>
+    Contattaci e parla con noi delle tue esigenze, troveremo insieme la strada giusta.
+   </p>
+</div>
+
+ 
+
+<footer>
+    Visual ACCADEMIA DEL SECOLO | Via Atlantide, 24 - 0331, Milano ITALIA | C.F. ABCSMDKSKDMSMSMD | P.Iva 000000000 <br>
+    <a class="trans-color-text" href="#">info@Agenzi.it</a> | <span itemprop="telephone"><a href="#">+39 02 45 65 76 695 59</a></span>
+      
+
+    <div class="social-cont">        
+    <ul class="social-list">
+
+    <li><a target="_blank" href="https://it-it.facebook.com/"><img src="logo favicon/Face.png"  title="facebook" alt="Facebook icon"></a></li>
+    <li><a target="_blank" href="https://twitter.com/"><img src="logo favicon/Twi.png" title="twitter" alt="Instagram icon"></a></li>
+    <li><a target="_blank" href="https://www.instagram.com/"><img src="logo favicon/Istagram.png" title="instagram" alt="Instagram icon"></a></li>
+
+    </ul>
+    <div class="floatstop"></div>
+    </div>
+    </div>
+</footer>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+        $(document).ready(function(){
+        $(".Martello").on('click', function(){
+            $(".menu").toggleClass("menu--open");
+            });
+        });
+        </script>
+</body>
+</html>

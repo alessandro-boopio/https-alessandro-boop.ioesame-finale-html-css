@@ -1,0 +1,315 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotattti</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="Favicon.png "  type="image/favicon" width="16px">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+ /*Basi Styli*/
+body{background-color: whitesmoke;}
+h1,h2,h3,h4,h5, p{color: white; padding-bottom: 30px;}
+.testo{line-height: 20px; color: grey; font-weight: 300;}
+.big-text{font-size: 70px; font-weight: 900;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.intro-text{text-transform: uppercase;font-size: 20px; font-weight: bold;}
+.small-text{font-size: 14px;}
+.button{padding: 10px 30px; background-color: blue; color: #fff; display: inline-block; border-radius: 4px; font-family: 'Roboto', sans-serif; text-decoration: none;}
+.content{max-width: 900px; margin: 0 auto; margin-top: 15px;}
+.tv{color: antiquewhite;}
+/*Basi Styli*/
+
+
+@media(max-width: 768px){
+.big-text{font-size: 40px;}
+}
+
+
+
+
+ /*Header*/
+.header{
+    width: 95%; position: fixed; top: 0;
+    left: 50%;
+transform: translateX(-48%);
+    padding: 30px;
+    display: flex;
+    max-width: 1350px;
+}
+.logo{z-index: 1; }
+.logo img{width: 100px; height: 90px; margin-top: -15px;}
+.menu{ width: 100%; z-index: 0;}
+.menu li{display: inline-block}
+.menu li a{color: wheat; padding: 15px; display: block; font-family: 'Roboto', sans-serif; text-decoration: none; font-size: 23px}
+.Martello{display: none;}
+ /*Header*/
+
+
+
+ /*smartphone menu*/
+@media(max-width: 768px){
+    .cta{display: none;}
+    .menu{position: absolute; top: 0%; right:-100%;  background: black;
+    height: 100vh; padding-top: 80px;}
+    .menu li{display: block;}
+   .menu--open{right:0%;}
+   
+    .Martello{display: block;
+    width: 30px; height: 30px; 
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    }
+    .Martello span{background: whitesmoke;
+    height: 3px; width: 100%; display: block ;
+    margin-bottom: 5px;
+    }
+
+}
+  
+ /*smartphone menu*/
+
+
+ /*Hero*/
+.hero{
+    
+    height: 100vh;
+    display: flex;width: 100%;  align-items: center;
+    background: url(Img/Office22.avif) no-repeat center center;
+    background-size: cover;
+}
+
+.hero--small{height: 500px;}
+
+.hero__content{
+width: 90%;
+max-width: 1350px;
+margin: 0 auto;
+padding: 30px;
+}
+ /*Hero*/
+
+
+
+
+
+
+ /*Form*/
+ .color34{
+    background-color: rgb(245, 245, 245);
+}
+
+
+input, textarea { 
+font-size: 100%; padding:10px 0px;
+height: 40px; 
+width: 100%;
+}
+
+
+legend {
+    background-color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid rgb(141, 141, 141);
+    border-radius: 5px;
+}
+
+
+
+fieldset {
+    border: 1px solid rgb(141, 141, 141);
+    border-radius: 5px;
+}
+
+
+#submit {
+    margin-left: 20px;
+    background-color: rgb(44, 212, 114);
+    color: #fff;
+    border: 0px;
+    font-weight: bold;
+    font-size: 16px;
+}
+ /*Form*/
+
+
+ /*Footer*/
+ footer{
+	text-align:center;
+	padding:30px 10px;
+	line-height: 1.6em;
+	font-size:0.8em;
+	background-color: black;
+	color: #fff;
+    margin-top: 5%;
+}
+
+footer a{
+	color:#F0776C;
+}
+
+footer a:hover{
+	color:black;	
+}
+
+footer .social-cont .social-list > li {
+	margin: 8px 8px 8px 0;
+	display: inline-block;
+	vertical-align: top;
+	height: 32px;
+	width: 32px;
+	border-radius: 6em;
+	background-color:black; 
+}
+
+footer .social-cont .social-list li img {
+	width: 32px
+}
+
+footer .social-cont .social-list > li:hover {
+background:#FF968C; 	
+}
+ /*Footer*/	
+
+
+ /*smartphone Footer*/
+ @media(max-width:768px){
+    footer{
+        text-align:center;
+        padding:30px 10px;
+        line-height: 1.6em;
+        font-size:0.8em;
+        background-color: black;
+        color: #fff;
+        margin-top: 10%;
+    }
+}
+ /*smartphone Footer*/
+
+
+
+
+
+
+ /*box sizing*/
+*,
+*:before,
+*:after{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+</style>
+
+</head>
+<body>
+    
+
+    <div class="header">
+        <div class="logo">
+            <img src="logo favicon/Logo11.png" alt="">
+        </div>
+        <ul class="menu">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Default.html">Chi siamo</a></li>
+            <li><a href="Sitoweb.html"> Contatti</a></li>
+        </ul>
+        <div class="cta">
+        <span></span>
+        <span></span>
+        <span></span>
+            </div>
+        </div>
+        
+        
+        <div class="hero hero--small">
+            <div class="hero__content">
+                <p class="intro-text">Accademia Del Secolo
+                </p>
+                <h1 class="big-text">I nostri contatti</h1>
+            </div>
+        </div>
+
+        
+        <div class="content">
+            <h3 class="med-text">Iscrizione</h3>
+                <form class="color34">
+                    <fieldset class="Vector">
+                        <legend> Per Favore Compila il form per maggiori informazioni</legend>
+                        <label for="name">Nome e cognome</label>
+                        <input type="text" class="nome" name="name" maxlength="30">
+                        <br>
+                        <label for="email">Email</label>
+                        <input type="email" class="email" name="email" required maxlength="40">
+                        <br>
+                        <label for="phone">Cellulare</label>
+                        <input type="phone" id="phone" name="phone" maxlength="10">
+                        <br>
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="Support">Supporto</option>
+                            <option value="Sales">Sales</option>
+                            <option value="Report a bug">Report a bug</option>
+                        </select>
+                        <br>
+                        <label id="message_label" for="message">Parlaci di te </label>
+                        <textarea id="message" name="message" id="" cols="30" rows="2"></textarea>
+                        <br>
+                        <label for="file">Carica il cv</label>
+                        <input type="file" id="file" name="file" multiple>
+                        <br>
+                        <input type="submit" value="Iscriviti">
+                    </fieldset>
+                </form>
+            </div>
+                </div>
+                
+              
+
+                <footer>
+                    Visual Accademia Del Secolo| Via Atlantide, 24 - 0331, Milano ITALIA | C.F. ABCSMDKSKDMSMSMD | P.Iva 000000000 <br>
+                    <a class="trans-color-text" href="#">info@Agenzi.it</a> | <span itemprop="telephone"><a href="#">+39 02 45 65 76 695 59</a></span>
+                      
+            
+                    <div class="social-cont">        
+                    <ul class="social-list">
+            
+                    <li><a target="_blank" href="https://it-it.facebook.com/"><img src="logo favicon/Face.png"  title="facebook" alt="Facebook icon"></a></li>
+                    <li><a target="_blank" href="https://twitter.com/"><img src="logo favicon/Twi.png" title="Instagram" alt="Twitter-logo"></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/"><img src="logo favicon/Istagram.png" title="Instagram" alt="Instagram icon"></a></li>
+            
+                    </ul>
+                    <div class="floatstop"></div>
+                    </div>
+            
+                 
+                    </div>
+                    
+                </footer>
+                
+            
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+$(document).ready(function(){
+$(".Martello").on('click', function(){
+    $(".menu").toggleClass("menu--open");
+    });
+});
+</script>
+
+</body>
+</html>
