@@ -2,7 +2,7 @@
 .body{font-family: 'Poppins', sans-serif; color: grey;}
 h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
 .testo1{font-size: 20px;}
-.testo{line-height: 20px; color: whitesmoke; font-weight: 300;}
+.testo{line-height: 15px; color: whitesmoke; font-weight: 300;}
 .testo4{text-transform: uppercase;font-size: 20px; font-weight: bold; color: white;}
 .testo3{color: white; font-size: 70px; font-weight: 900;}
 .big-text{font-size: 70px; font-weight: 900;}
@@ -11,13 +11,15 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
 .intro-text{text-transform: uppercase;font-size: 20px; font-weight: bold;}
 .small-text{font-size: 14px;}
 .button{padding: 10px 30px; background-color: blue; color: #fff; display: inline-block; border-radius: 4px; font-family: 'Roboto', sans-serif; text-decoration: none;}
-.tv1{color: red;}
+.tv1{color: red; font-size: 35px;}
 .c{font-size: 25px;}
 .testo2{margin-top:120px;}
-.tv{color: antiquewhite;}
+.tv{color: antiquewhite; font-size: 25px;}
 /*Base Styli*/
 
 
+
+  
 
 
  /*smartphone*/
@@ -78,6 +80,8 @@ transform: translateX(-48%);
     display: flex;width: 100%;  align-items: center;
     background: url(Img/immagine4.avif) no-repeat center center;
     background-size: cover;
+    transition: opacity 0.3s;
+
 }
 
 .hero__content{
@@ -112,7 +116,7 @@ padding: 30px;
  /* Poster smartphone*/
 
  /*Cover*/
-.bg-cover{
+ .bg-cover{
     display: flex;
     padding: 100px 0;
     background: linear-gradient(0deg, rgba(0,0,0,.7),rgba(0,0,0, 0.7)),url(Img/Automazione.avif) no-repeat center center;
